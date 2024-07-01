@@ -1,0 +1,12 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    background-color: #141414;
+    color: #f4f4f4;
+}
+
+.resultado {
+    font-size: 48px;
+}
