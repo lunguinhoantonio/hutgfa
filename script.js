@@ -1,7 +1,7 @@
 
 function somar() {
-    let primeiroValor = Number.parseInt(document.querySelector('#primeiro-input').value);
-    let segundoValor = Number.parseInt(document.querySelector('#segundo-input').value);
+    let primeiroValor = Number.parseInt(document.querySelector('.primeiro-input').value);
+    let segundoValor = Number.parseInt(document.querySelector('.segundo-input').value);
     let operacao = document.querySelector('.operacao').value;
 
     if (operacao == '+') {
