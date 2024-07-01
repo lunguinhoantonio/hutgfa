@@ -8,15 +8,15 @@ function somar() {
         let resultado = primeiroValor + segundoValor;
         document.querySelector('.resultado').innerHTML = resultado;
     }
-    if (operacao == '-') {
+    else if (operacao == '-') {
         let resultado = primeiroValor - segundoValor;
         document.querySelector('.resultado').innerHTML = resultado;
     } 
-    if (operacao == '*') {
+    else if (operacao == '*') {
         let resultado = primeiroValor * segundoValor;
         document.querySelector('.resultado').innerHTML = resultado;
     }
-    if (operacao == '/') {
+    else if (operacao == '/') {
         let resultado = primeiroValor / segundoValor;
         document.querySelector('.resultado').innerHTML = resultado;
     } else {
