@@ -7,13 +7,15 @@
 
 :root {
     --black: #141414;
+    --alt-black: #242424;
+    --grey: #343434;
     --white: #f4f4f4;
     --alt-white: #ddd;
-    --grey: #343434;
 }
 
 body {
-    background: var(--black);
+    background-color: var(--black);
+    background-image: linear-gradient(0deg, var(--black), var(--alt-black));
     color: var(--white);
 }
 
@@ -46,7 +48,7 @@ body {
 .operacao {
     border-radius: 8px;
     font-size: 72px;
-    background-color: var(--black);
+    background-color: transparent;
     color: var(--white);
     border: 2px solid var(--grey);
     margin: 12px auto;
@@ -71,7 +73,8 @@ body {
     justify-content: center;
     cursor: pointer;
     color: var(--alt-white);
-    background-color: var(--black);
+    background-color: transparent;
+    backdrop-filter: blur(16px);
     border: 2px solid var(--grey);
     padding: 16px;
     width: 360px;
@@ -79,7 +82,6 @@ body {
     border-radius: 9999px;
     margin: 16px auto;
     font-weight: 600;
-    backdrop-filter: blur(16px);
     transition: 350ms;
 }
 
