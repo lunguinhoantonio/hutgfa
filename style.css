@@ -20,3 +20,16 @@ input {
 .operacao {
     width: 1%;
 }
+
+@media screen and (max-width: 1080px){
+    input {
+        font-size: 48px;
+    }
+    .primeiro-input,
+    .segundo-input {
+        width: 20%;
+    }
+    .operacao {
+        width: 10%;
+    }
+}
