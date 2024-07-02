@@ -8,17 +8,19 @@
     <title>Tentativa Calculadora</title>
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <input type="text" class="primeiro-input" maxlength="2" placeholder="Insira um número inteiro" title="Insira um número inteiro">
-    <input type="text" class="operacao" maxlength="1" placeholder="Digite uma operação" title="Digite uma operação">
-    <!-- <select class="operacoes">
-        <option class="adicao" value="+" selected>+</option>
-        <option class="subtracao" value="-">-</option>
-        <option class="multiplicacao" value="*">*</option>
-        <option class="divisao" value="/">/</option>
-    </select>  -->
-    <input type="text" class="segundo-input" maxlength="2" placeholder="Insira um segundo número" title="Insira um segundo número">
-    <button onclick="somar()">Calcular</button>
+    <h1 class="title">Calculadora</h1>
+    <div class="container">
+        <input type="text" class="primeiro-input" maxlength="2" placeholder="Primeiro Número" title="Insira um número inteiro">
+        <input type="text" class="operacao" maxlength="1" placeholder="Digite uma operação" title="Digite uma operação">
+        <!-- <select class="operacoes">
+            <option class="adicao" value="+" selected>+</option>
+            <option class="subtracao" value="-">-</option>
+            <option class="multiplicacao" value="*">*</option>
+            <option class="divisao" value="/">/</option>
+        </select>  -->
+        <input type="text" class="segundo-input" maxlength="2" placeholder="Segundo Número" title="Insira um segundo número">
+        <button type="submit" class="calcular" onclick="somar()">Calcular</button>
+    </div>
     <h1 class="resultado"></h1>
     <script src="script.js"></script>
 </body>

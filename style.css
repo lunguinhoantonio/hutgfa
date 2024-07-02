@@ -1,24 +1,97 @@
 * {
     font-family: monospace;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #141414;
+    --white: #f4f4f4;
+    --alt-white: #ddd;
+    --grey: #343434;
 }
 
 body {
-    background-color: #141414;
-    color: #f4f4f4;
+    background: var(--black);
+    color: var(--white);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+
+.title::selection {
+    background-color: var(--grey);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.primeiro-input,
+.segundo-input {
+    width: 87px;
+}
+
+.operacao {
+    width: 45px;
+}
+
+.primeiro-input,
+.segundo-input,
+.operacao {
+    border-radius: 8px;
+    font-size: 72px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--grey);
+    margin: 12px auto;
+    transition: 350ms;
+}
+
+.primeiro-input
+.segundo-input
+.operacao:focus {
+    border: 2px solid var(--white);
+    transition: 350ms;
+}
+
+.calcular {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--alt-white);
+    background-color: var(--black);
+    border: 2px solid var(--grey);
+    padding: 16px;
+    width: 360px;
+    font-size: 32px;
+    border-radius: 9999px;
+    margin: 16px auto;
+    font-weight: 600;
+    backdrop-filter: blur(16px);
+    transition: 350ms;
+}
+
+.calcular:hover {
+    color: var(--white);
+    border: 2px solid #ddd;
+    transition: 350ms;
 }
 
 .resultado {
+    display: flex;
+    justify-content: center;
     font-size: 48px;
+    margin-top: 16px;
 }
-input {
-    font-size: 16px;
-}
-.primeiro-input,
-.segundo-input {
-    width: 2%;
-}
-.operacao {
-    width: 1%;
+
+.resultado::selection{
+    background-color: var(--grey);
 }
 
 @media screen and (max-width: 1080px){
@@ -27,9 +100,15 @@ input {
     }
     .primeiro-input,
     .segundo-input {
-        width: 20%;
+        width: 84px;
     }
     .operacao {
-        width: 10%;
+        width: 42px;
     }
+    .calcular {
+        font-size: 24px;
+        padding: 16px;
+        width: 250px;
+    }
+
 }
