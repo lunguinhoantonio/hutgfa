@@ -60,6 +60,12 @@ body {
     transition: 350ms;
 }
 
+.primeiro-input
+.segundo-input
+.operacao::selection {
+    background-color: var(--grey);
+}
+
 .calcular {
     display: flex;
     justify-content: center;
