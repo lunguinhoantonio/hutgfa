@@ -19,12 +19,8 @@ function somar() {
     else if (operacao == '/') {
         let resultado = primeiroValor / segundoValor;
         document.querySelector('.resultado').innerHTML = resultado;
-    } 
-    else if (operação != NaN) {
+    } else {
         alert(`Operação inválida!
             Digite uma das operações aceitas: +, -, * ou /`);
-    } else {
-        alert(`Insira uma operação!
-            Digite uma das operações aceitas: +, -, * ou /`)
     }
 }
