@@ -13,9 +13,11 @@
     --alt-white: #ddd;
 }
 
-body {
+html {
     background-color: var(--black);
-    background-image: linear-gradient(0deg, var(--black), var(--alt-black));
+}
+
+body {
     color: var(--white);
 }
 
