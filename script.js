@@ -19,8 +19,27 @@ function somar() {
     else if (operacao == '/') {
         let resultado = primeiroValor / segundoValor;
         document.querySelector('.resultado').innerHTML = resultado;
-    } else {
+    }
+    else if (operacao == '**'){
+        let resultado = primeiroValor ** segundoValor;
+        document.querySelector('.resultado').innerHTML = resultado;
+    }
+    else if (operacao == ''){
+        alert(`Insira uma operação!
+            Digite uma das operações aceitas: 
+            Adição: +
+            Subtração: -
+            Multiplicação: *
+            Divisão: /
+            Potenciação: **`);
+    }
+    else {
         alert(`Operação inválida!
-            Digite uma das operações aceitas: +, -, * ou /`);
+            Digite uma das operações aceitas: 
+            Adição: +
+            Subtração: -
+            Multiplicação: *
+            Divisão: /
+            Potenciação: **`);
     }
 }
