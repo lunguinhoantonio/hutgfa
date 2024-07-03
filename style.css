@@ -37,12 +37,9 @@ body {
 }
 
 .primeiro-input,
-.segundo-input {
-    width: 87px;
-}
-
+.segundo-input,
 .operacao {
-    width: 45px;
+    width: 84px;
 }
 
 .primeiro-input,
@@ -110,11 +107,9 @@ body {
         font-size: 48px;
     }
     .primeiro-input,
-    .segundo-input {
-        width: 84px;
-    }
+    .segundo-input,
     .operacao {
-        width: 42px;
+        width: 84px;
     }
     .calcular {
         font-size: 24px;
